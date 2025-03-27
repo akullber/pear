@@ -20,6 +20,11 @@ footer,
   padding-right: var(--wp--preset--spacing--medium);
 }
 
+// Add margin between group blocks
+.wp-block-group + .wp-block-group {
+  margin-top: 3.6rem;
+}
+
 // Editor-specific styles
 .editor-styles-wrapper {
   .wp-block,
@@ -71,3 +76,7 @@ footer,
 .wp-block-group__inner-container > * {
   max-width: 100%;
 } 
+
+.site-header {
+  padding: 1.5rem 0 0 0;
+}

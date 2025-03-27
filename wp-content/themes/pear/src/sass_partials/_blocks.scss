@@ -1,14 +1,16 @@
 @use 'abstracts' as *;
 
-.wp-block-paragraph {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  margin-bottom: $spacing-unit * 1.5;
-  color: $base;
-}
-h1.wp-block-heading {
-  @include fluid-type(2rem, 5vw, 4rem);
-  margin-bottom: $spacing-unit;
-  color: $primary;
+
+// Editor styles
+.editor-styles-wrapper {
+  .wp-block-image .components-resizable-box__container img {
+    display: block;
+    height: inherit;
+    width: inherit;
+    border-radius: 1.5rem;
+  }
 }
 
+figure.wp-block-gallery.has-nested-images {
+  margin: 0;
+}
