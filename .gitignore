@@ -1,0 +1,65 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules and dependencies
+wp-content/themes/pear/node_modules/
+wp-content/themes/pear/package-lock.json
+wp-content/themes/pear/yarn.lock
+
+# Build files
+wp-content/themes/pear/*.css.map
+wp-content/themes/pear/*.js.map
+wp-content/themes/pear/*.min.css
+wp-content/themes/pear/*.min.js
+wp-content/themes/pear/style-rtl.css
+wp-content/themes/pear/build/
+wp-content/themes/pear/dist/
+wp-content/themes/pear/assets/css/
+wp-content/themes/pear/assets/js/
+
+# Composer
+wp-content/themes/pear/vendor/
+wp-content/themes/pear/composer.lock
+
+# Logs
+wp-content/themes/pear/*.log
+wp-content/themes/pear/npm-debug.log*
+wp-content/themes/pear/yarn-debug.log*
+wp-content/themes/pear/yarn-error.log*
+
+# Environment files
+wp-content/themes/pear/.env
+wp-content/themes/pear/.env.local
+wp-content/themes/pear/.env.*.local
+
+# Cache
+wp-content/themes/pear/.cache/
+wp-content/themes/pear/.temp/
+wp-content/themes/pear/.sass-cache/
+wp-content/themes/pear/*.cache
+
+# WordPress specific
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/backups/
+wp-content/plugins/
+wp-content/mu-plugins/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+
+# Development tools
+wp-content/themes/pear/.eslintcache
+wp-content/themes/pear/.stylelintcache
+wp-content/themes/pear/.prettiercache
+wp-content/themes/pear/.coverage/
+wp-content/themes/pear/.nyc_output/ 

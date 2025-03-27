@@ -1,0 +1,10 @@
+@use 'normalize.css/normalize.css';
+@use 'sass_partials/abstracts' as *;
+@use 'sass_partials/fonts' as *;
+@use 'sass_partials/layout' as *;
+@use 'sass_partials/blocks' as *;
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
