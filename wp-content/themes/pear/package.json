@@ -11,7 +11,9 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@wordpress/scripts": "^30.7.0",
-    "normalize.css": "^8.0.1"
+    "@wordpress/scripts": "^30.7.0"
+  },
+  "dependencies": {
+    "sanitize.css": "^13.0.0"
   }
 }
