@@ -14,6 +14,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>  
 <?php wp_body_open(); ?>
 <div id="page" class="site">
     <header id="masthead" class="site-header">
@@ -24,4 +25,4 @@
         </div>
     </header>
 </body>
-</html> 
+</html>

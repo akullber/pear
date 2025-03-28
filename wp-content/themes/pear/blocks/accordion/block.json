@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "pear/accordion",
+    "version": "1.0.0",
+    "title": "Accordion",
+    "category": "formatting",
+    "icon": "list-view",
+    "description": "An accordion component with title and content",
+    "keywords": ["accordion", "toggle", "faq"],
+    "supports": {
+        "html": false,
+        "anchor": true
+    },
+    "attributes": {
+        "items": {
+            "type": "array",
+            "default": [],
+            "source": "query",
+            "selector": ".accordion__item",
+            "query": {
+                "title": {
+                    "type": "string",
+                    "source": "html",
+                    "selector": ".accordion__title"
+                },
+                "content": {
+                    "type": "string",
+                    "source": "html",
+                    "selector": ".accordion__content"
+                }
+            }
+        }
+    },
+    "textdomain": "pear",
+    "editorScript": "file:../../build/blocks/accordion/index.js",
+    "style": "file:./style.css",
+    "viewScript": "file:../../build/blocks/accordion/script.js"
+} 

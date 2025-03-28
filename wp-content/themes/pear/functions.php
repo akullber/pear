@@ -12,6 +12,8 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+require_once get_template_directory() . '/blocks/accordion/init.php';
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -72,18 +74,18 @@ if ( ! function_exists( 'pear_block_styles' ) ) :
             list-style: none;
             padding-left: 0;
         }
-        
+
 				ul.is-style-checkmark-list {
             list-style: none;
             padding-left: 0;
         }
-        
+
         ul.is-style-checkmark-list li {
             position: relative;
             padding-left: 30px;
             margin-bottom: 10px;
         }
-        
+
         ul.is-style-checkmark-list li:before {
             content: "";
             position: absolute;
@@ -94,25 +96,25 @@ if ( ! function_exists( 'pear_block_styles' ) ) :
             background-color: #4D5A5E;
             border-radius: 50%;
         }
-        
+
         ul.is-style-checkmark-list li:after {
             content: "✓";
             position: absolute;
-            left: 2px;
-            top: -5px;
+            left: 1px;
+            top: -2px;
             color: white;
             font-size: 24px;
         }',
 			)
 		);
 
-    register_block_style( 
-			array( 'core/paragraph', 'core/heading' ), 
-			array( 
-				'name'         => 'kicker', 
-				'label'        => __( 'Kicker', 'pear' ), 
-				'inline_style' => '.is-style-kicker { 
-					border-radius: 10000px; 
+    register_block_style(
+			array( 'core/paragraph', 'core/heading' ),
+			array(
+				'name'         => 'kicker',
+				'label'        => __( 'Kicker', 'pear' ),
+				'inline_style' => '.is-style-kicker {
+					border-radius: 10000px;
 					background: #F2F2F2;
           text-transform: uppercase;
           font-size: .75rem;
@@ -121,7 +123,7 @@ if ( ! function_exists( 'pear_block_styles' ) ) :
           font-weight: 800;
           color: #4D5A5E;
 				}',
-			) 
+			)
 		);
 
     register_block_style(
@@ -134,7 +136,19 @@ if ( ! function_exists( 'pear_block_styles' ) ) :
               overflow: hidden;
           }',
       )
-  );
+  	);
+
+		register_block_style(
+      'core/columns',
+      array(
+          'name'         => 'rounded',
+          'label'        => 'Rounded',
+          'inline_style' => '.is-style-rounded .wp-block-column {
+              border-radius: 1.5rem;
+              overflow: hidden;
+          }',
+      )
+  	);
 	}
 endif;
 add_action( 'init', 'pear_block_styles' );

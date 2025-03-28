@@ -81,7 +81,7 @@
 					"name": "Inter",
 					"slug": "inter",
 					"fontFamily":  "Inter, sans-serif"
-				
+
 				}
 			]
 		},
@@ -135,7 +135,7 @@
           "fontSize": "1rem"
         },
         "border": {
-          "radius": "10000px"
+          "radius": "1.5rem"
         },
         "spacing": {
           "padding": {
@@ -223,7 +223,7 @@
         "typography": {
           "fontWeight": "900",
           "fontSize": "var:preset|font-size|small",
-          "lineHeight": "1.2em" 
+          "lineHeight": "1.2em"
         },
         "color": {
               "text": "var(--wp--preset--color--primary)"
